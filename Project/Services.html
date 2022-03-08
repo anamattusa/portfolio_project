@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lemonada&family=Lora&family=Neucha&family=Potta+One&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    <title> Ana Matthews Designs</title>
+    <link rel="icon" type="" href="Pics/SIG.png">
+</head>>
+    <header >
+      
+      <div class="navbar"> 
+         <input type="checkbox" id="checkbox">
+         
+             <nav>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                     <li><a href="Portfolio.html">Portfolio</a></li>
+                     <li><a href="Services.html">Services & Testimonials</a></li>
+                     <li><a href="About.html">About-me</a></li>
+                     <li><a href="Contact.html">Contact </a></li>
+                  </ul>
+              </nav>
+            <label for="checkbox" class="menu-icon"> ☰ </label>  
+            <div class= "media">
+                 <a href="https://www.linkedin.com/in/ana-duartematt/" target= "_blank" class="fa fa-linkedin"></a>
+                 <a href="https://www.instagram.com/ana_matthews_designs/ " target= "_blank" class="fa fa-instagram"></a>
+                 <a href="mailto: anamatthews.designs@gmail.com" target= "_blank" class="fa fa-envelope"></a>  
+             </div>
+      </div>
+     <div>
+      <img src="Pics/Logo.png" alt="A M Design brand name" class="logo">
+    </div>
+    <div>
+      <img src="Pics/pic1.jpeg" alt="picture of dry leaf on a black background" class="center1"> 
+    </div>
+    </header>     
+
+    <body>
+      <h2> Services </h2>
+      <div class="serv">
+         <ul>
+         <li>Website Design </li>
+         <li>Responsive Web Design</li>
+         <li>Logo Design & Branding</li>
+         <li>Marketing Materials</li>
+         <li>SEO Services </li>
+       </ul>
+       </div>
+<br>
+<br>
+<br>
+       <div class="slideshow-container">
+        <h1> Testimonials </h1>
+        <div class="mySlides">
+          <q>Ana designed our website at Chatham Hill Winery and did beautiful work! We appreciate her creativity and professionalism and would highly recommend her to anyone looking for a talented web designer. 
+            Thank you Ana! It is a pleasure to work with you!</q>
+          <p class="author">- Chatham Hill</p>
+        </div>
+        
+        <div class="mySlides">
+          <q>Ana did such a great job with the design of our logo. We couldn't be more pleased. The detail, the care! We just love it.
+          </q>
+          <p class="author">- Mariana Guerreiro </p>
+        </div>
+        
+        <div class="mySlides">
+          <q>Ana designed a Logo for me and it was amazing! It looks classy and professional. I couldn’t be happier. All my customers love it! So glad I found her.
+          </q>
+          <p class="author">- Titan Environmental Group</p>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+      <div class="backbut"></div>
+      <a href="index.html"> <button class="buttonback">Go Back
+      </a>
+      </button>  
+       </div>
+        
+       <footer>
+        <div class= "foot">
+      
+           <a href="https://www.linkedin.com/in/ana-duartematt/" target= "_blank" class="fa fa-linkedin"></a>
+           <a href="https://www.instagram.com/ana_matthews_designs/ " target= "_blank" class="fa fa-instagram"></a>
+           <a href="mailto: anamatthews.designs@gmail.com" target= "_blank" class="fa fa-envelope"></a>  
+      
+           <p>anamatthews.designs@gmail.com</p>
+       </div>
+   <div>
+        <p>
+            ©Copyright 2022, All Rights Reserved.
+        </p>
+  </div>
+     </footer>
+</body>
+</html>
