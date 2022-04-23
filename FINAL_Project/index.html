@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lemonada&family=Lora&family=Neucha&family=Potta+One&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    <title> Ana Matthews Designs</title>
+    <link rel="icon" type="" href="Pics/SIG.png">
+</head>
+<header class="header">
+  <nav class="navbar">
+      <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="Portfolio.html" >Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="Services.html">Services & Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="About.html" >About-me</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="Contact.html">Contact </a>
+          </li>
+      </ul>
+      <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+  </nav>
+
+<script>
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+</script>
+</header>
+   
+<body>
+
+
+      <div CLASS="INTRO">
+        <img src="Pics/Logo.png" alt="A M Design brand name" class="logo">
+        <br>
+        <br>
+        <br>
+      <div class= "media">
+           <a href="https://www.linkedin.com/in/ana-duartematt/" target= "_blank" class="fa fa-linkedin"></a>
+           <a href="https://www.instagram.com/ana_matthews_designs/ " target= "_blank" class="fa fa-instagram"></a>
+           <a href="https://github.com/anamattusa/portfolio_project" target= "_blank" class="fa fa-github"></a>
+           <a href="mailto: anamatthews.designs@gmail.com" target= "_blank" class="fa fa-envelope"></a>  
+       </div>
+
+</div>
+
+</div>
+
+   <main>
+     
+<div>
+    <img src="Pics/pic1.jpeg" alt="picture of a dry leaf on a black background" class="center1" > 
+    
+
+        <p class="rotatingText"></p>
+        
+          <span class="rotatingText-adjective">WEB</span>
+          <span class="rotatingText-adjective">GRAPHIC</span>
+          <span class="rotatingText-adjective">WEB & GRAPHIC DESIGN</span>
+        </p>
+       </div>
+
+
+      <button onclick= "window.location.href='Portfolio.html'" class="button"><span> My Portfolio </span></button>
+
+      <div class="container">
+        <div class="box">
+          <img src="Pics/Maellogo.jpg"alt=" maelys boutique name brand with a picture of a closet in the background">
+          
+       
+        </div>
+        <div class="box">
+          <img src="Pics/titanweb.jpeg"alt="titan brand name in a notebook, cellphone, and tablet mockups.">
+      
+        </div>
+        <div class="box">
+          <img src="Pics/WIN1.jpeg"alt="A winery homepage website that includes a bottle of wine and a wine glass.">
+      
+        </div>
+        <div class="box">
+          <img src="Pics/maelweb.jpeg"alt="maelys brand name in a computer,notebook, cellphone, and tablet mockups.">
+        
+        </div>
+        <div class="box">
+          <img src="Pics/marilogo2.png"alt="mariana guerreiro brand name with a design of a feather">
+        
+        </div>
+      </div>
+   </main>
+
+     <footer>
+         <div class= "foot">
+
+          <a href="https://www.linkedin.com/in/ana-duartematt/" target= "_blank" class="fa fa-linkedin"></a>
+           <a href="https://www.instagram.com/ana_matthews_designs/ " target= "_blank" class="fa fa-instagram"></a>
+           <a href="https://github.com/anamattusa/portfolio_project" target= "_blank" class="fa fa-github"></a>
+           <a href="mailto: anamatthews.designs@gmail.com" target= "_blank" class="fa fa-envelope"></a>   
+
+         <p>anamatthews.designs@gmail.com</p>
+        </div>
+    <div>
+         <p>
+             ©Copyright 2022, All Rights Reserved.
+         </p>
+   </div>
+      </footer>
+
+</body>
+</html>

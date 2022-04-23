@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lemonada&family=Lora&family=Neucha&family=Potta+One&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    <title> Ana Matthews Designs</title>
+    <link rel="icon" type="" href="Pics/SIG.png">
+</head>
+<header class="header">
+  <nav class="navbar">
+      <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="Portfolio.html" >Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="Services.html">Services & Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="About.html" >About-me</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="Contact.html">Contact </a>
+          </li>
+      </ul>
+      <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+  </nav>
+
+
+<script>
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+</script>
+
+
+     <div CLASS="INTRO">
+       <img src="Pics/Logo.png" alt="A M Design brand name" class="logo">
+       <br>
+       <br>
+       <br>
+     <div class= "media">
+      <a href="https://www.linkedin.com/in/ana-duartematt/" target= "_blank" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/ana_matthews_designs/ " target= "_blank" class="fa fa-instagram"></a>
+      <a href="https://github.com/anamattusa/portfolio_project" target= "_blank" class="fa fa-github"></a>
+      <a href="mailto: anamatthews.designs@gmail.com" target= "_blank" class="fa fa-envelope"></a>
+      </div>
+
+</div>
+
+
+</div>
+</header>
+
+
+
+<body>
+  <main>
+  <img src="Pics/pic1.jpeg" alt="picture of a dry leaf on a black background" class="center1" >
+
+ 
+  <div class="serv">
+     <ul>
+      <h1>Services</h1>
+     <li>Website Design & Development</li>
+     <li>Responsive & Mobile Sites </li>
+     <li>Brand Development</li>
+     <li>Logo Design</li>
+     <li>Marketing Materials</li>
+     <li>Stationery</li>
+     <li>Product & Packaging Design</li>
+   </ul>
+   </div>
+<br>
+<br>
+<br>
+
+<div>
+
+  <h3>THE DESIGN PROCESS</h3>
+
+<div class="cards">
+  <div class="card">
+    <header>
+      <h2>PLANNING</h2>
+      <br>
+      <br>
+      <br>
+      <img src="Pics/pro1.png" alt="icons and graphics">
+    </header>
+
+   
+    <div class="inf">
+      <p>The planning stage is the most important, because the more precisely the project is planned, the less time it will take for the rest of the stages. 
+        What is decided and traced in this stage will define the rest of the project.
+    </div>
+
+  </div>
+
+  <div class="card">
+    <header>
+      <h2>DESIGN</h2>
+      <br>
+      <br>
+      <br>
+      <img src="Pics/pro2.png" alt="icons and graphicsr">
+    </header>
+    <div class="inf">
+      <p>The design stage involves achieving the objectives outlined in the planning stage. Through prototypes and mockups, a visual representation is created where it is possible to predict how visitors will interact with it; it also helps to determine 
+        the user experience and if the visual style is meeting the determined objectives.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <header>
+      <h2>DEVELOPMENT</h2>
+      <br>
+      <br>
+      <br>
+      <img src="Pics/pro3.png" alt="Coloured balloon">
+    </header>
+    <div class="inf">
+      <p>The development stage involves most of the programming work, consisting of the front-end and the back-end. The front-end consists of how visitors interact with the website when browsing it. The back-end is necessary to ensure that data is stored, 
+        manipulated, and delivered to the browser correctly. </p>
+    
+    </div>
+  </div>
+
+  
+  </div>
+
+</div>
+
+</div>
+
+
+
+       <div class="slideshow-container">
+        <h1> Testimonials </h1>
+        <div class="mySlides">
+          <q>Ana designed our website at Chatham Hill Winery and did beautiful work! We appreciate her creativity and professionalism and would highly recommend her to anyone looking for a talented web designer. 
+            Thank you Ana! It is a pleasure to work with you!</q>
+          <p class="author">- Chatham Hill</p>
+        </div>
+        
+        <div class="mySlides">
+          <q>Ana did such a great job with the design of our logo. We couldn't be more pleased. The detail, the care! We just love it.
+          </q>
+          <p class="author">- Mariana Guerreiro </p>
+        </div>
+        
+        <div class="mySlides">
+          <q>Ana designed a Logo for me and it was amazing! It looks classy and professional. I couldn’t be happier. All my customers love it! So glad I found her.
+          </q>
+          <p class="author">- Titan Environmental Group</p>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+   <div class="backbut"> 
+     <button onclick= "window.location.href='index.html'" class="buttonback">Go Back </button>
+   </div>
+
+</main>
+       <footer>
+        <div class= "foot">
+      
+          <a href="https://www.linkedin.com/in/ana-duartematt/" target= "_blank" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/ana_matthews_designs/ " target= "_blank" class="fa fa-instagram"></a>
+          <a href="https://github.com/anamattusa/portfolio_project" target= "_blank" class="fa fa-github"></a>
+          <a href="mailto: anamatthews.designs@gmail.com" target= "_blank" class="fa fa-envelope"></a>
+      
+           <p>anamatthews.designs@gmail.com</p>
+       </div>
+   <div>
+        <p>
+            ©Copyright 2022, All Rights Reserved.
+        </p>
+  </div>
+     </footer>
+</body>
+</html>
